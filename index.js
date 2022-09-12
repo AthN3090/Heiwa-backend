@@ -11,7 +11,7 @@ const server = http.createServer(app)
 let onlineUsers = [];
 const io = new Server(server, {
     cors: {
-        origin: ["https://heiwa.vercel.app"], 
+        origin: ["https://heiwa.vercel.app", "http://localhost:3000/"], 
         methods : ["GET", "POST"],
     }
 });
